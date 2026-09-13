@@ -1,0 +1,9 @@
+.refact/
+node_modules
+.next
+out
+.env*.local
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store

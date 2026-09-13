@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: rgba(201, 168, 118, 0.28);
+  color: #f0ece4;
+}
+
+/* Visible, deliberate focus ring — never suppressed */
+:focus-visible {
+  outline: 2px solid #c9a876;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.container-content {
+  @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-10;
+}
+
+.section-pad {
+  @apply py-24 sm:py-32;
+}
+
+.hairline {
+  @apply border-base-border;
+}
+
+.eyebrow {
+  @apply font-mono text-[11px] uppercase tracking-[0.22em] text-signal;
+}
+
+/* Subtle grain overlay to keep the near-black background from feeling flat/digital */
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
