@@ -80,7 +80,9 @@ export function DataPipeline({ steps }: DataPipelineProps) {
         {steps.map((step, i) => (
           <li key={step.number} className="relative">
             <span
-              ref={(el) => (dotRefs.current[i] = el)}
+              ref={(el) => {
+                dotRefs.current[i] = el;
+              }}
               aria-hidden
               className="absolute -left-12 top-1 flex h-5 w-5 items-center justify-center rounded-full border border-base-border-strong bg-base sm:-left-16"
             />

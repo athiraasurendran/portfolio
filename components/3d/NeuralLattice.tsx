@@ -140,7 +140,12 @@ export function NeuralLattice({ reduceMotion, lowPower }: LatticeProps) {
       </points>
 
       {pulses.current.map((_, i) => (
-        <mesh key={i} ref={(el) => (pulseRefs.current[i] = el)}>
+        <mesh
+          key={i}
+          ref={(el) => {
+            pulseRefs.current[i] = el;
+          }}
+        >
           <sphereGeometry args={[0.05, 8, 8]} />
           <meshBasicMaterial color="#c9a876" transparent opacity={0.9} />
         </mesh>
