@@ -1,11 +1,13 @@
 # Athira A S — Portfolio
 
+
+Personal portfolio built with Next.js (App Router), TypeScript, Tailwind CSS,
+React Three Fiber, Framer Motion, and GSAP.
+
 ## Live Portfolio
 
 https://athiraas.vercel.app
 
-Personal portfolio built with Next.js (App Router), TypeScript, Tailwind CSS,
-React Three Fiber, Framer Motion, and GSAP.
 
 All content in `data/` is sourced directly from the resume, the provided
 certificate files, and the
