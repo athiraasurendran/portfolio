@@ -36,14 +36,6 @@ npm run start
 npm run lint
 ```
 
-> **Note on this environment:** this project was authored in a sandbox with
-> no network access, so `npm install` / `npm run build` could not be run or
-> verified here. The code was written and manually reviewed carefully, but
-> **please run `npm run build` yourself before deploying** and fix anything
-> your local Node/TypeScript toolchain flags (there shouldn't be much — see
-> the self-review notes below).
-
----
 
 ## 2. Assets you still need to add
 
