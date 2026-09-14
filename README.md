@@ -124,8 +124,7 @@ data/                       Single source of truth for all content
 lib/                        Shared utilities (cn helper, nav section config)
 public/
   certificates/             Certificate files go here (see README.md inside)
-  resume/                   Resume PDF kept on disk (not linked from the UI —
-                             visitors are directed to email instead)
+  resume/                   Available to download directly from the portfolio.
 ```
 
 To add a new project, certification, or skill later, edit the relevant file
