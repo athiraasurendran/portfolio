@@ -61,21 +61,6 @@ Full certificate-to-file mapping is documented in
 
 ---
 
-## 3. Before you deploy — a few things to double-check yourself
-
-1. **Domain**: `data/site.ts` has a placeholder `siteUrl`
-   (`https://athiraas.vercel.app`). Update it to your real Vercel URL
-   or custom domain once you know it — it feeds `metadataBase`, the sitemap,
-   robots.txt, and the JSON-LD structured data.
-2. **Email/links**: `data/site.ts` also holds your email and social links —
-   re-confirm these are current.
-3. Run `npm run build` locally and fix any type errors your installed
-   `@types/react` / `@types/three` versions surface — dependency type
-   definitions occasionally drift in minor ways between versions.
-4. Open the site on an actual phone (not just a resized browser window) to
-   sanity-check the 3D hero performance and the mobile menu.
-
----
 
 ## 4. Deploying: GitHub → Vercel
 
